@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .form-container {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .phrase {
+    margin-bottom: 10px;
+    letter-spacing: 1px; /* Adds space between letters */
+  }
+  
+  .letter {
+    display: inline-block;
+    margin-right: 5px; /* Adds space between spans */
+  }
+  
+  input[type="text"] {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    display: block;
+    width: 10%;
+    padding: 10px;
+    border: none;
+    background-color:  #512da8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .phrase:first-child {
+    display: block; /* Muestra solo la primera frase */
+  }
+  
+  

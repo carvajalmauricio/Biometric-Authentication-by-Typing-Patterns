@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login/style.css') }}">
+    <title>Ingresar</title>
+</head>
+<body>
+
+    <div class="info-container">
+        <p>Tipo de Navegador: {{ session.get('browser', 'No disponible') }}</p>
+        <p>Version de Navegador: {{ session.get('version', 'No disponible') }}</p>
+        <p>IP : {{ session.get('ip_addr', 'No disponible') }}</p>
+        
+    </div>
+
+    <div class="container" id="container">
+
+        <div class="form-container sign-up">
+            <form action="register" method="post">
+                <h1>Crear una cuenta</h1>
+                <span>Ingresa tu nombre y un nombre de usuario</span>
+                <input type="text" name="name" placeholder="Nombre">
+                <input type="text" name="nickname" placeholder="Nombre de usuario">
+                <input type="text" name="email" placeholder="Correo electronico">
+                <button type="submit">Empezar Registro</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form method="POST">
+                <h1>Iniciar Sesión</h1>
+                <span for="username">Ingresa tu nombre de usuario</span>
+                <input name="username" type="text" placeholder="nombre de usuario" id="username" autocomplete="off">
+                <button>Empezar reconocimiento</button>
+            </form>
+            {% if error %}
+            <script>
+                alert("{{ error }}");
+            </script>
+            {% endif %}
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>¡Bienvenido!</h1>
+                    <p>Da click aquí si ya estás registrado y empezar el reconocimiento.</p>
+                    <button class="hidden" id="login">Iniciar Sesión</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>¿Eres nuevo?</h1>
+                    <p>Da click aquí para empezar tu registro.</p>
+                    <button class="hidden" id="register">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='login/script.js') }}"></script>
+</body>
+</html>

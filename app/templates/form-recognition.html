@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login/styles.css') }}">
+    <title>Reconocimiento</title>
+</head>
+<body>
+    <div class="form-container sign-in">
+        <form>
+        <p>Nombre de usuario:{{ session.get('username', '') }}</p>
+        <p>Tipo de Navegador: {{ session.get('browser', 'No disponible') }}</p>
+        <p>Version de Navegador: {{ session.get('version', 'No disponible') }}</p>
+        <p>IP : {{ session.get('ip_addr', 'No disponible') }}</p>
+            <h1>Empezar reconocimiento</h1>
+            <span>A continuación tendrá que escribir algunas frases</span>
+            <div id="phrase0" class="phrase">
+                <!-- Ejemplo con la frase "el sol amarillo" -->
+                {% for letter in selected_phrases['0'] %}
+                <span class="letter">{{ letter }}</span>
+                {% endfor %}
+            </div>
+
+            <input type="text" placeholder="Escriba la frase en la pantalla" id="input0" data-phrase="0" autocomplete="off">
+            <button type="button" id="btn0" onclick="document.getElementById('input0').prepareData()">Listo</button>
+
+            <div id="phrase1" class="phrase">
+                <!-- Ejemplo con la frase "el sol amarillo" -->
+                {% for letter in selected_phrases['1'] %}
+                <span class="letter">{{ letter }}</span>
+                {% endfor %}
+            </div>
+
+            <input type="text" placeholder="Escriba la frase en la pantalla" id="input1" data-phrase="1" autocomplete="off">
+            <button type="button" id="btn1" onclick="document.getElementById('input1').prepareData()">Listo</button>
+
+            <div id="phrase2" class="phrase">
+                <!-- Ejemplo con la frase "el sol amarillo" -->
+                {% for letter in selected_phrases['2'] %}
+                <span class="letter">{{ letter }}</span>
+                {% endfor %}
+            </div>
+            
+            <input type="text" placeholder="Escriba la frase en la pantalla" id="input2" data-phrase="2" autocomplete="off">
+            <button type="button" id="btn2" onclick="document.getElementById('input2').prepareData()">Listo</button>
+            
+            <!-- <button onclick="sendData()">Empezar reconocimiento</button> -->
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='login/recognition.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='login/enhanced-recognition.js') }}"></script> -->
+</body>
+</html>

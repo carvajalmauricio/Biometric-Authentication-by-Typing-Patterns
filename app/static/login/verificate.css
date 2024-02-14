@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  h2, p {
+    text-align: center; /* Centra los títulos y párrafos */
+    color: #333;
+  }
+  
+  form {
+    max-width: 400px; /* Establece un ancho máximo para el formulario */
+    margin: 20px auto; /* Centra el formulario horizontalmente */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  input[type="text"] {
+    width: 100%; /* Hace que el input ocupe el 100% del ancho del formulario */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho final */
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #5C6BC0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Suaviza el cambio de color al pasar el ratón */
+  }
+  
+  button:hover {
+    background-color: #3F51B5;
+  }
+  
+  #hidden-elements {
+    display: none; /* Continúa ocultando los elementos hasta que se llame a la función */
+    padding-top: 20px;
+    border-top: 1px solid #ddd; /* Añade un separador visual */
+  }
+  
+  .alert {
+    color: #D32F2F;
+    font-weight: bold;
+    margin-top: 20px; /* Añade espacio antes del mensaje de alerta */
+  }
+  

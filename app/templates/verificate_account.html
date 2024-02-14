@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login/verificate.css') }}">
+    <title>Su cuenta necesita una verificación</title>
+    <style>
+        /* CSS para ocultar los elementos inicialmente */
+        #hidden-elements {
+            display: none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    {% if validation_ip %}
+        <p>Estás accediendo desde una nueva IP, por favor verifica tu cuenta</p>
+    {% endif %}
+    {% if validation_b %}
+        <p>Este navegador no ha sido agregado anteriormente, por favor verifica tu cuenta</p>
+    {% endif %}
+
+    <form action="{{ url_for('verificate_blueprint.verificate') }}" method="POST">
+        <p>Digite su correo electronico</p>
+        <input type="text" name="email" id="email" placeholder="correo electronico">
+        <button onclick="sendMessageAndShowCodeInput()" type="button">Ok</button>
+        <div id="hidden-elements">
+            <p>Ingrese el código de 6 dígitos enviado 
+                a su correo electrónico</p>
+            <input type="text" name="code" placeholder=" _ _ _ _ _ _ " id="code">
+            {% if error %}
+            <script>
+                alert("{{ error }}");
+            </script>
+            {% endif %}
+            <button type="submit">Verificar</button>
+        </div>
+    </form>
+
+    <script>
+        // Función para mostrar los elementos ocultos y enviar el mensaje
+        function sendMessageAndShowCodeInput() {
+            var email = document.getElementById('email').value;
+            $.ajax({
+                url: '/send_message', // Ruta del endpoint en el servidor que ejecuta send_message()
+                type: 'POST',
+                data: {
+                    email: email,
+                },
+                success: function(response) {
+                    console.log(response);
+                    // Mostrar los elementos ocultos después de que el mensaje se haya enviado
+                    var hiddenElements = document.getElementById('hidden-elements');
+                    hiddenElements.style.display = 'block';
+                },
+                error: function(xhr, status, error) {
+                    console.error('Hubo un error al enviar el mensaje: ', error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

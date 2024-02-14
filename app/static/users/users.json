@@ -1,0 +1,154 @@
+{
+    "users": [
+        {
+            "browsers": {
+                "202402041555182": {
+                    "User Agent": "PC / Windows 10 / Firefox 122.0",
+                    "ip": "121.0.0.1",
+                    "type": "Firefox",
+                    "version": "122.0"
+                },
+                "202402041919481": {
+                    "User Agent": "PC / Windows 10 / Edge 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Edge",
+                    "version": "121.0.0"
+                },
+                "202402081445072": {
+                    "User Agent": "PC / Windows 10 / Edge 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Edge",
+                    "version": "121.0.0"
+                },
+                "202402081532363": {
+                    "User Agent": "PC / Windows 10 / Chrome 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Chrome",
+                    "version": "121.0.0"
+                }
+            },
+            "email": "maurolrs1@hotmail.es",
+            "id": 0,
+            "name": "MAURICIO CARVAJAL",
+            "nickname": "maurolrs1",
+            "state": {
+                "code": "",
+                "state": "unlocked"
+            }
+        },
+        {
+            "browsers": {
+                "202402041634300": {
+                    "User Agent": "PC / Windows 10 / Edge 121.0.0",
+                    "ip": "192.168.100.53",
+                    "type": "Edge",
+                    "version": "121.0.0"
+                },
+                "202402041854481": {
+                    "User Agent": "PC / Windows 10 / Edge 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Edge",
+                    "version": "121.0.0"
+                },
+                "202402041858172": {
+                    "User Agent": "PC / Windows 10 / Chrome 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Chrome",
+                    "version": "121.0.0"
+                },
+                "202402081527483": {
+                    "User Agent": "PC / Windows 10 / Edge 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Edge",
+                    "version": "121.0.0"
+                }
+            },
+            "email": "carvajalmauricio905@gmail.com",
+            "id": 1,
+            "name": "Leti Mimi",
+            "nickname": "klmklmn",
+            "state": {
+                "code": "",
+                "state": "unlocked"
+            }
+        },
+        {
+            "browsers": {},
+            "email": "maurolrs160@gmail.com",
+            "id": 2,
+            "name": "MAURICIO CARVAJAL",
+            "nickname": "klmklmnknk",
+            "state": {
+                "code": "267473",
+                "state": "blocked"
+            }
+        },
+        {
+            "browsers": {
+                "202402062010100": {
+                    "User Agent": "PC / Windows 10 / Chrome 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Chrome",
+                    "version": "121.0.0"
+                },
+                "202402081422541": {
+                    "User Agent": "PC / Windows 10 / Edge 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Edge",
+                    "version": "121.0.0"
+                },
+                "202402081545222": {
+                    "User Agent": "PC / Windows 10 / Edge 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Edge",
+                    "version": "121.0.0"
+                },
+                "202402081547373": {
+                    "User Agent": "PC / Windows 10 / Edge 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Edge",
+                    "version": "121.0.0"
+                },
+                "202402081550064": {
+                    "User Agent": "PC / Windows 10 / Edge 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Edge",
+                    "version": "121.0.0"
+                }
+            },
+            "email": "jhontroya52@gmail.com",
+            "id": 3,
+            "name": "Jhon Troya",
+            "nickname": "JhonC19",
+            "state": {
+                "code": "",
+                "state": "unlocked"
+            }
+        },
+        {
+            "browsers": {
+                "202402081457500": {
+                    "User Agent": "PC / Windows 10 / Edge 121.0.0",
+                    "ip": "127.0.0.1",
+                    "type": "Edge",
+                    "version": "121.0.0"
+                }
+            },
+            "email": "marilynlp32@gmail.com",
+            "id": 4,
+            "name": "Marilyn López",
+            "nickname": "alejius12405",
+            "state": {
+                "code": "",
+                "state": "unlocked"
+            }
+        },
+        {
+            "browsers": {},
+            "email": "carvajalmauricio905@gmail.com",
+            "id": 5,
+            "name": "Alejandro ",
+            "nickname": "alej"
+        }
+    ]
+}
