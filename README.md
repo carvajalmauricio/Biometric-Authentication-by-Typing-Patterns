@@ -143,9 +143,15 @@ El sistema utiliza validación cruzada para optimizar los hiperparámetros del m
 5. El sistema captura el patrón de escritura y lo compara con el modelo
 6. Si coincide, el acceso es concedido; de lo contrario, se solicita verificación adicional
 
-## 📝 Licencia
+## 👥 Contribuciones
 
-Este proyecto está licenciado bajo [tu licencia] - ver el archivo LICENSE para más detalles.
+Las contribuciones son bienvenidas. Para cambios importantes:
+
+1. Haz fork del repositorio
+2. Crea una rama para tu característica (`git checkout -b feature/nueva-caracteristica`)
+3. Haz commit de tus cambios (`git commit -m 'Añadir nueva característica'`)
+4. Haz push a la rama (`git push origin feature/nueva-caracteristica`)
+5. Abre un Pull Request
 
 ## 🔮 Mejoras Futuras
 
@@ -154,11 +160,5 @@ Este proyecto está licenciado bajo [tu licencia] - ver el archivo LICENSE para 
 - Análisis de comportamiento continuo durante las sesiones
 - Soporte para múltiples idiomas y disposiciones de teclado
 - Adaptación a dispositivos móviles y pantallas táctiles
-
-## 📞 Contacto
-
-Para preguntas o sugerencias, contacta a [tu correo o información de contacto].
-
----
 
 **Nota**: Este sistema está diseñado como una capa adicional de seguridad y no debe ser el único método de autenticación en sistemas críticos.
